@@ -1,0 +1,7 @@
+REPORT Z_ARGHYA_ADDITION.
+data:a type I VALUE 100,
+      b type I VALUE 50,
+      C type I.
+C = a + b.
+Write C.
+WRITE: 'sum of two numbers',C.
