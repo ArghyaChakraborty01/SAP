@@ -1,0 +1,19 @@
+PARAMETERS: number TYPE i.
+
+IF number = 0.
+  WRITE: |The { number } is Zero.|.
+ELSEIF number > 0.
+  CASE number MOD 2.
+    WHEN 0.
+      WRITE: |The { number } is greater than 0 and even.|.
+    WHEN OTHERS.
+      WRITE: |The { number } is greater than 0 and odd.|.
+  ENDCASE.
+ELSE.
+  CASE number MOD 2.
+    WHEN 0.
+      WRITE: |The { number } is less than 0 and even.|.
+    WHEN OTHERS.
+      WRITE: |The { number } is less than 0 and odd.|.
+  ENDCASE.
+ENDIF.
